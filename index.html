@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header {
+            justify-content: space-evenly;
+            padding: 20px 10%;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        nav .menu {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+            margin-right: 150px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            margin: 10px 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+            transition: 1s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d9f688;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            flex-basis: 50%;
+            position: relative;
+        }
+
+        .feature-img {
+            width: 90%;
+            margin-top: 10px;
+            ;
+        }
+
+        .col h1 {
+            font-weight: 600;
+            font-size: 40px;
+            margin-left: 100px;
+            margin-top: 200px;
+            margin-bottom: 30px;
+        }
+
+        .col a {
+            margin-left: 100px;
+            text-decoration: none;
+            color: black;
+            background-color: #d9f688;
+            padding: 10px 20px;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: 1s;
+        }
+
+        .col a:hover {
+            background-color: white;
+            border: 2px solid #d9f688;
+        }
+
+        #container {
+            margin-top: 15px;
+        }
+
+        #img-animal {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .img-don {
+            margin: 10px;
+            width: 20%;
+            height: 300px;
+        }
+
+        .img-don:hover {
+            opacity: 70%;
+        }
+
+        .img-1 {
+
+            background-color: rgb(69, 68, 68);
+            background-image: url(pic1.png);
+            background-repeat: no-repeat;
+            background-size: 90% 90%;
+            background-position: 50% 50%;
+            border-radius: 5px;
+            border: 4px solid #d9f688;
+        }
+
+        .img-2 {
+
+            background-color: rgb(69, 68, 68);
+            background-image: url(pic1.png);
+            background-repeat: no-repeat;
+            background-size: 90% 90%;
+            background-position: 50% 50%;
+            border-radius: 5px;
+            border: 4px solid #d9f688;
+        }
+
+        .img-3 {
+
+            background-color: rgb(69, 68, 68);
+            background-image: url(pic1.png);
+            background-repeat: no-repeat;
+            background-size: 90% 90%;
+            background-position: 50% 50%;
+            border-radius: 5px;
+            border: 4px solid #d9f688;
+        }
+
+        .img-4 {
+
+            background-color: rgb(69, 68, 68);
+            background-image: url(pic1.png);
+            background-repeat: no-repeat;
+            background-size: 90% 90%;
+            background-position: 50% 50%;
+            border-radius: 5px;
+            border: 4px solid #d9f688;
+        }
+
+        .img-0 {
+            text-align: center;
+            background-color: #d9f688;
+            height: 20vh;
+            border-radius: 4px;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
+
+        .title-order {
+            font-weight: 700;
+            font-size: 20px;
+
+        }
+
+        .price {
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+
+        .order {
+            text-decoration: none;
+            color: black;
+            padding: 7px 20px;
+            border-radius: 10px;
+            border: 2px solid;
+        }
+
+        @media only screen and (max-width: 850px) {
+            nav ul li {
+                display: none;
+            }
+
+            .row {
+                display: block;
+            }
+
+            .feature-img {
+                margin-top: 30px;
+                margin-left: 50px;
+            }
+
+            .img-don {
+                width: 80%;
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 751px) and (max-width: 1150p) {
+            nav ul li {
+                display: none;
+            }
+
+            .row {
+                display: block;
+            }
+
+            .feature-img {
+                margin-top: 10px;
+                margin-left: 50px;
+            }
+
+            .img-don {
+                width: 30%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="menu.png" class="menu">
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col">
+            <h1>All happiness depends on a<br>leisurely breakfast</h1>
+            <a href="" class="oeder">Oeder Now</a>
+        </div>
+        <div class="col">
+            <img src="pic1.png" class="feature-img">
+        </div>
+    </div>
+    <div id="container">
+        <div id="img-animal">
+            <div class="img-1 img-don"></div>
+            <div class="img-0 img-don">
+                <p class="title-order">Italian Pasta Dinner</p>
+                <p class="price"> 799 PKR Only</p>
+                <a href="" class="order">Order Now</a>
+            </div>
+                <div class="img-1 img-don"></div>
+                <div class="img-0 img-don">
+                    <p class="title-order">Italian Pasta Dinner</p>
+                    <p class="price"> 799 PKR Only</p>
+                    <a href="" class="order">Order Now</a>
+                </div>
+                <div class="img-1 img-don"></div>
+                <div class="img-0 img-don">
+                    <p class="title-order">Italian Pasta Dinner</p>
+                    <p class="price"> 799 PKR Only</p>
+                    <a href="" class="order">Order Now</a>
+                </div>
+                <div class="img-1 img-don"></div>
+                <div class="img-0 img-don">
+                    <p class="title-order">Italian Pasta Dinner</p>
+                    <p class="price"> 799 PKR Only</p>
+                    <a href="" class="order">Order Now</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
